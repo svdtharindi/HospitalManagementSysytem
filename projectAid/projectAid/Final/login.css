@@ -1,0 +1,90 @@
+body {
+    background-color: white;
+    /* background-image: url(src/Screenshot\ 2022-11-14\ at\ 11.15.29.png);
+    background-repeat: no-repeat; */
+}
+
+.loginCenter {
+    background-color: rgb(255, 255, 255, 1);
+    background-image: url(src/Hospital.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5vh;
+    width: 70%;
+    height: 85%;
+    /* border: 5px solid red; */
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 30px 50px rgb(196, 207, 199);
+    position: relative;
+}
+
+.logoDiv {
+    position: absolute;
+    left: 87.5%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    background-image: url("src/logo2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10%;
+    width: 20%;
+    z-index: 2;
+}
+
+.insideUpper {
+    height: 60%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+}
+
+.loginForm {
+    width: 50%;
+    height: 60%;
+    background-color: rgb(210, 200, 225, 0.9);
+    position: absolute;
+    left: 100%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 5vh;
+    padding: 1vh;
+    box-shadow: 0px 0px 50px 10px rgb(196, 207, 199);
+}
+
+.loginTable {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+td {
+    position: relative;
+}
+
+input {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    border-radius: 5vh;
+    padding: 2.5vh;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    border: none;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: rgb(220, 200, 240, 1);
+    border: 2px solid purple;
+}

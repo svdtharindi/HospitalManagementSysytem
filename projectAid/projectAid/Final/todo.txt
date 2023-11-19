@@ -1,0 +1,12 @@
+hide the open & close navbar buttons for now
+create the add staff window
+add elements to add staff window
+create 2 more windows to update and delete
+clone add staff window for add patient
+create 2 more windows for update and delete patient.
+
+staff report
+patient report
+inventory report
+billing report
+appointments report

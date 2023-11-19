@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .leftDiv {
+            width: 20%;
+            height: 100%;
+            border: 2px solid red;
+            position: fixed;
+            background-color: antiquewhite;
+            contain: content;
+            margin: 0 padding 0;
+        }
+        
+        .maindiv {
+            margin-left: 20%;
+            height: 100%;
+            /* position: fixed; */
+            border: 1px solid black;
+            background-color: black;
+            /* width: 80%; */
+            border: 1px solid blue;
+        }
+        
+        i {
+            color: white;
+        }
+        
+        .boxholder {
+            height: 70%;
+            width: 60%;
+            border: 1px solid red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .box {
+            width: 20%;
+            height: 10%;
+            border: 1px solid black;
+            display: inline-block;
+            padding: 20px;
+        }
+        /* input {
+            position: fixed;
+            margin: 1vh;
+            top: 25%;
+        } */
+        
+        .leftHolder {
+            height: 100%;
+            width: 40%;
+            background-color: antiquewhite;
+        }
+        
+        .inputTable {
+            /* height: 100%; */
+            width: 90%;
+            margin: auto;
+        }
+        
+        .inputTable td {
+            padding: 1vh;
+        }
+        
+        .inputTable input {
+            width: 100%;
+        }
+        
+        .rightHolder {
+            width: 60%;
+            height: 100%;
+            background-color: azure;
+            position: fixed;
+            top: 0%;
+            right: 0%;
+        }
+        
+        .leftHolder input {
+            width: 80%;
+            margin-left: 50%;
+            margin-top: 2vh;
+            transform: translate(-50%);
+        }
+        
+        .leftInside {
+            height: 85%;
+            width: 90%;
+            border: 1px solid green;
+            margin: auto;
+            margin-top: 2vh;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        
+        .contentBlock {
+            border: 1px solid black;
+            width: 80%;
+            height: fit-content;
+            display: block;
+            contain: content;
+            margin-block-start: 2vh;
+            margin-left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            justify-content: center;
+        }
+        /* .contentBlock p {
+            display: inline-block;
+            width: 90%;
+            border: 1px solid blue;
+        } */
+        
+        .active {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="leftDiv" id="testNav">
+        <p>
+            test
+        </p>
+    </div>
+    <div class="maindiv" id="maindiv">
+        <br>
+        <br>
+        <button id="testBtn">
+            thoge appata
+        </button>
+        <button id="openBtn">
+            haal garapan
+        </button>
+        <br>
+        <i id="testi">test</i>
+    </div> -->
+
+    <div class="boxholder" id="bigBox">
+        <div class="leftHolder">
+            <input type="text" placeholder="Search By Patient Name" id="searchBar" onkeyup="myFunction()">
+            <div class="leftInside" id="bigBox">
+                <div class="contentBlock">
+                    <p class="patientDetails" name="pName" id="Randila">Patient Name :Randila </p>
+                    <br>
+                    <p class="patientDetails" name="pId" id="69">Patient iD : 69</p>
+                </div>
+                <div class="contentBlock">
+                    <p class="patientDetails" name="pName" id="Saveen">Patient Name :Saveen </p>
+                    <br>
+                    <p class="patientDetails" name="pId" id="420">Patient iD : 420</p>
+                </div>
+                <div class="contentBlock">
+                    <p class="patientDetails" name="pName" id="Dilasha">Patient Name :Dilasha </p>
+                    <br>
+                    <p class="patientDetails" name="pId" id="999"> Patient iD : 999</p>
+                </div>
+            </div>
+        </div>
+        <div class="rightHolder float-right">
+            <table class="inputTable" border="1">
+                <tr>
+                    <td>
+                        <p>Patient ID : </p>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="patId" placeholder="0069">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Patient Name : </p>
+                    </td>
+                    <td>
+                        <input type="text" id="patName" placeholder="Johnny">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="date">
+                    </td>
+                    <td>
+                        <input type="time">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="" id="">
+                        <option value="" disabled selected>
+                            Select A Doctor
+                        </option>
+                        <option value=""> Randila</option>
+                        <option value=""> Randila</option>
+                        <option value=""> Randila</option>
+                        <option value=""> Randila</option>
+                        <option value=""> Randila</option>
+                    </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- <input type="text" id="textExtract" placeholder="bonk"> -->
+
+
+
+
+
+
+
+</body>
+<script>
+    // var main,inside;
+    var main = document.getElementById("bigBox");
+    var inside = main.getElementsByClassName("contentBlock");
+    for (var i = 0; i < inside.length; i++) {
+        inside[i].addEventListener("click", function() {
+            var currentActive = document.getElementsByClassName("active");
+            console.log(currentActive[0]);
+            if (currentActive.length > 0) {
+                currentActive[0].className = currentActive[0].className.replace(" active", "");
+            }
+
+            this.className += " active";
+            var mostinner = this.getElementsByTagName("p");
+            for (var j = 0; j < mostinner.length; j++) {
+                document.getElementById("patName").value = mostinner[0].id;
+                document.getElementById("patId").value = mostinner[1].id;
+
+            }
+        });
+    }
+</script>
+<script>
+    function myFunction() {
+        // Declare variables 
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchBar");
+        filter = input.value.toUpperCase(); //get serached value and turn to upper case
+
+        table = document.getElementById("bigBox");
+        tr = table.getElementsByClassName("contentBlock"); //since tr is tage takes getelemnet by tag
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("p")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText; //innerText is function of html
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+
+<!-- <script>
+    var closebtn = document.getElementById("testi");
+    closebtn.addEventListener("click", function() {
+        document.getElementById("testNav").style.width = "0px";
+        document.getElementById("maindiv").style.marginLeft = "0";
+    });
+</script>
+
+<script>
+    var openbtn = document.getElementById("openBtn");
+    openbtn.addEventListener("click", function() {
+        document.getElementById("testNav").style.width = "20%";
+        document.getElementById("maindiv").style.marginLeft = "20%";
+    });
+</script> -->
+
+</html>

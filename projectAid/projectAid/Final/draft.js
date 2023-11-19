@@ -1,0 +1,1 @@
+alert("Couldn't connect to the database!");

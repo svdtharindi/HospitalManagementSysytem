@@ -1,0 +1,1341 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- <link rel="stylesheet" href="add_css 2.css"> -->
+
+    <!-- webpage icon -->
+    <link rel="icon" type="image/x-icon" href="src/logoSquare.png">
+    <!-- webpage icon -->
+
+    <!-- imported font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!-- imported font -->
+    <title>
+        Dashboard
+    </title>
+</head>
+
+<body>
+
+    <div id="myDIV" class="sidebar" id="sideNavbar">
+        <!-- <br>
+        <i id="closeBtn" class="fa fa-close"></i>
+        <br> -->
+        <p class="slideSelect active" id="Home">Home</p>
+        <p class="slideSelect" id="Manage Patient">Manage Patient</p>
+        <p class="slideSelect" id="Manage Staff">Manage Staff</p>
+        <p class="slideSelect" id="Billing">Billing</p>
+        <p class="slideSelect" id="Appointments">Appointments</p>
+        <p class="slideSelect" id="Inventory">Inventory</p>
+        <p class="slideSelect" id="Monthly Reports">Monthly Reports</p>
+
+    </div>
+    <div id="contentDiv" class="content">
+        <div class="catTwo" style="display: none;" id="Homediv">
+            <div class="tileHolder">
+                <div class="homeTile">
+                    <div class="tileinner" style="background-image: url('src/appointments.png');"></div>
+                    <div class="test">
+                        <p>
+                            Appointments
+                        </p>
+                        <p>
+                            18
+                        </p>
+                    </div>
+                </div>
+                <div class="homeTile">
+                    <div class="tileinner" style="background-image: url('src/patient.png');"></div>
+                    <div class="test">
+                        <p>
+                            Patients
+                        </p>
+                        <p>
+                            1000
+                        </p>
+                    </div>
+                </div>
+                <div class="homeTile">
+                    <div class="tileinner" style="background-image:url('src/delete.png');"></div>
+                    <div class="test">
+                        <p>
+                            Delete Requests
+                        </p>
+                        <p>
+                            10
+                        </p>
+                    </div>
+                </div>
+                <div class="homeTile">
+                    <div class="tileinner" style="background-image: url('src/medical\ staff.png');">
+                    </div>
+                    <div class="test">
+                        <p>
+                            Total Medical Staff
+                        </p>
+                        <p>
+                            99
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appointmentListdiv">
+                <table border="0" class="appointmentsTable">
+
+                    <tr>
+                        <th>
+                            Appointments List
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Date</th>
+                        <th>Patient</th>
+                        <th>Doctor</th>
+                    </tr>
+                </table>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Randila Senath </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Chathushi Gunapala </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Dilasha Tharindi</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="catTwo" style="display: none;" id="Manage Patientdiv">
+            <div class="tileHolder2">
+                <div class="homeTile TileCenter" id="addPatientOpenbtn" onclick="windowManager('addPatientWindowPop')">
+                    <p class="TileText">Add Patient</p>
+                </div>
+                <div class="homeTile TileCenter">
+                    <p class="TileText">Update Patient</p>
+                </div>
+                <div class="homeTile TileCenter">
+                    <p class="TileText">Delete Patient</p>
+                </div>
+            </div>
+            <div class="addStaffWindow" id="addPatientWindowPop">
+                <div class="addStaffInner" id="insideAddPatient" style="display: none;">
+                    <i class="fa fa-close closebtn" id="addPatientClosebtn" onclick="windowCloser('addPatientWindowPop')"></i>
+
+                    <!-- START OF DINITHI'S CODE -->
+                    <div class="innerAddPatient">
+                        <!-- <div class="tileHolder3">
+                            <button class="tablinks active" onclick="openInfo(event, 'AddPatient1')">Profile Details</button>
+                            <button class="tablinks" onclick="openInfo(event, 'AddPatient2')">Other Details</button>
+                        </div> -->
+                        <div class="tabContent2" id="AddPatient1">
+                            <form action="">
+                                <table border="0" class="addStaffProfileDetailsTable">
+                                    <tr>
+                                        <!--Next Row-->
+                                        <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="First Name"></td>
+                                        <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="Last Name"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Birth Date</p>
+                                        </td>
+                                        <td> <input type="date" name="b_day" autocomplete="on" required></td>
+                                        <td>
+                                            <p>Gender</p>
+                                        </td>
+                                        <td>
+                                            <select name="gender" id="gender">
+                                                <option value="Female">Female</option>
+                                                <option value="Male">Male</option>
+                                            
+                                            </select>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2">
+                                            <input id="nic" type="text" name="nic" autocomplete="on" required placeholder="NIC">
+                                        </td>
+                                        <td>
+                                            <input type="text" id="Age" required placeholder="Age" max="99" min="10">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input id="phone" type="text" name="phone" autocomplete="on" required placeholder="mobile number">
+                                        </td>
+                                        <td colspan="2">
+                                            <input id="email" type="email" name="email" autocomplete="on" required placeholder="email address">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>
+                                            <p>Current Address</p>
+                                        </td> -->
+                                        <td colspan="3"> <textarea name="txtAddress" id="" cols="1" rows="4" placeholder="Address"></textarea>
+
+                                    </tr>
+                                    <!--Next Row-->
+                                    <tr>
+                                        <td colspan="2">
+                                            <select name="" id="">
+                                                <option value="" disabled selected>
+                                                    Assign a Doctor 
+                                                </option>
+                                                <option value="">Randila</option>
+                                                <option value="">Saveen</option>
+                                                <option value="">Dinithi</option>
+                                                <option value="">Dilasha</option>
+                                                <option value="">Chathushi</option>
+                                            </select>
+                                        </td>
+                                        <td colspan="2"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <input type="submit" value="Admit Patient">
+                                        </td>
+                                    </tr>
+                                </table>
+                        </div>
+                        </form>
+
+                    </div>
+
+
+
+                    <!-- END OF DINITHI'S CODE -->
+                </div>
+            </div>
+            <div class="staffList" style="display: block;">
+                <table border="0" class="appointmentsTable2">
+
+                    <tr>
+                        <th>
+                            Patient List
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="width: 30%;">Name</th>
+                        <th style="width: 10%;">Patient ID</th>
+                        <th>Assigned Doctor</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td style="width: 30%;">
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Saveen Malinga</p>
+                        </td>
+                        <td style="width: 10%;">
+                            <p>69 </p>
+                        </td>
+                        <td>
+                            <p>Doctor</p>
+                        </td>
+                        <td style="width: 40%;"><input type="button" value="update">
+                            <input type="button" value="add prescription"></td>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td style="width: 30%;">
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Dinithi Abeysuriya</p>
+                        </td>
+                        <td style="width: 10%;">
+                            <p>420 </p>
+                        </td>
+                        <td>
+                            <p>Nurse</p>
+                        </td>
+                        <td style="width: 40%;"><input type="button" value="update">
+                            <input type="button" value="add prescription"></td>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td style="width: 30%;">
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Dilasha Thraindi</p>
+                        </td>
+                        <td style="width: 10%;">
+                            <p>120</p>
+                        </td>
+                        <td>
+                            <p>Nurse</p>
+                        </td>
+                        <td style="width: 40%;"><input type="button" value="update">
+                            <input type="button" value="add prescription"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="catTwo" style="display: none;" id="Manage Staffdiv">
+            <!-- <button class="hamburgerIcon">
+                <i class="fa fa-bars"></i>
+            </button> -->
+            <div class="tileHolder2">
+                <div class="homeTile TileCenter" id="addStaffOpenbtn" onclick="windowManager('addStaffWindowPop')">
+                    <p class="TileText">Add Staff Member</p>
+                </div>
+                <div class="homeTile TileCenter">
+                    <p class="TileText">Update Staff Member</p>
+                </div>
+            </div>
+            <div class="staffList" style="display: block;">
+                <table border="0" class="appointmentsTable">
+
+                    <tr>
+                        <th>
+                            Medical Staff
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Staff Id</th>
+                        <th>Job Role</th>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td>
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Saveen Malinga</p>
+                        </td>
+                        <td>
+                            <p>69 </p>
+                        </td>
+                        <td>
+                            <p>Doctor</p>
+                        </td>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td>
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Dinithi Abeysuriya</p>
+                        </td>
+                        <td>
+                            <p>420 </p>
+                        </td>
+                        <td>
+                            <p>Nurse</p>
+                        </td>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td>
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Dilasha Thraindi</p>
+                        </td>
+                        <td>
+                            <p>120</p>
+                        </td>
+                        <td>
+                            <p>Nurse</p>
+                        </td>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td>
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Dilasha Thraindi</p>
+                        </td>
+                        <td>
+                            <p>120</p>
+                        </td>
+                        <td>
+                            <p>Nurse</p>
+                        </td>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td>
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Dilasha Thraindi</p>
+                        </td>
+                        <td>
+                            <p>120</p>
+                        </td>
+                        <td>
+                            <p>Nurse</p>
+                        </td>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td>
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Dilasha Thraindi</p>
+                        </td>
+                        <td>
+                            <p>120</p>
+                        </td>
+                        <td>
+                            <p>Nurse</p>
+                        </td>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td>
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Dilasha Thraindi</p>
+                        </td>
+                        <td>
+                            <p>120</p>
+                        </td>
+                        <td>
+                            <p>Nurse</p>
+                        </td>
+                    </tr>
+                </table>
+                <table border="0" class="appointmentsTable">
+                    <tr>
+                        <td>
+                            <img src="src/userimage.png" alt="" class="patientImg">
+                            <p>Dilasha Thraindi</p>
+                        </td>
+                        <td>
+                            <p>120</p>
+                        </td>
+                        <td>
+                            <p>Nurse</p>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="addStaffWindow" id="addStaffWindowPop">
+                <div class="addStaffInner" id="insideAddStaff" style="display: none;">
+                    <i class="fa fa-close closebtn" id="addStaffClosebtn" onclick="windowCloser('addStaffWindowPop')"></i>
+
+                    <!-- START OF DINITHI'S CODE -->
+                    <div class="innerAddStaff">
+                        <div class="tileHolder3" id="addStaffFormTabHolder">
+                            <button class="tablinks active" onclick="openInfo(event, 'ProfileDetails')">Profile Details</button>
+                            <button class="tablinks" onclick="openInfo(event, 'OtherDetails')">Other Details</button>
+                        </div>
+                        <div class="tabContent" id="ProfileDetails">
+                            <form action="">
+                                <table border="0" class="addStaffProfileDetailsTable">
+                                    <tr>
+                                        <!--Next Row-->
+                                        <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="First Name"></td>
+                                        <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="Last Name"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Birth Date</p>
+                                        </td>
+                                        <td> <input type="date" name="b_day" autocomplete="on" required></td>
+                                        <td>
+                                            <p>Gender</p>
+                                        </td>
+                                        <td>
+                                            <select name="gender" id="gender">
+                                                <option value="Female">Female</option>
+                                                <option value="Male">Male</option>
+                                            
+                                            </select>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2">
+                                            <input id="nic" type="text" name="nic" autocomplete="on" required placeholder="NIC">
+                                        </td>
+                                        <td> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input id="phone" type="text" name="phone" autocomplete="on" required placeholder="mobile number">
+                                        </td>
+                                        <td colspan="2">
+                                            <input id="email" type="email" name="email" autocomplete="on" required placeholder="email address">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Current Address</p>
+                                        </td>
+                                        <td colspan="3"> <textarea name="txtAddress" id="" cols="1" rows="4" placeholder="Street Address"></textarea>
+
+                                    </tr>
+                                    <!--Next Row-->
+                                    <tr>
+                                        <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="City"></td>
+                                        <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="State/Province"></td>
+
+
+                                    </tr>
+                                </table>
+
+                        </div>
+                        <div class="tabContent" id="OtherDetails" style="display: none;">
+                            <table class="addStaffProfileDetailsTable" border="0">
+                                <tr>
+                                    <th>
+                                        <p>Staff Picture</p>
+                                        </td>
+                                        <td colspan="3">
+                                            <input type="file" name="uploadfile" value="" />
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Qualifications</p>
+                                    </td>
+                                    <td colspan="2"><textarea name="txtQualification" id="" cols="1" rows="5"></textarea></td>
+
+
+                                </tr>
+                                <tr>
+
+                                    <td>Department</td>
+                                    <td colspan="2">
+                                        <select name="department" id="department">
+                                            <option value="Outpatient department (OPD)">Outpatient department (OPD)</option>
+                                            <option value="Inpatient Service (IP)"> Inpatient Service (IP)</option>
+                                            <option value="Medical Department">Medical Department</option>
+                                            <option value="Nursing Department"> Nursing Department</option>
+                                            <option value="Paramedical Department">Paramedical Department</option>
+                                            <option value="Physical Medicine">Physical Medicine</option>
+                                            <option value="Operation Theatre Complex (OT)">Operation Theatre Complex (OT)</option>
+                                            <option value="Inpatient Service (IP)"> Inpatient Service (IP)</option>
+                                        </select>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>User Account Type</p>
+                                    </td>
+                                    <td> <select name="" id="">
+                                        <option value="" disabled selected>
+                                           Select the Account Type
+                                        </option>
+                                        <option value="">Medical Staff</option>
+                                        <option value="">Administrator</option>
+                                        
+                                    </select></td>
+
+
+                                    <td>Employee Type</td>
+                                    <td>
+                                        <select name="department" id="department">
+                                        <option value="Nurses">Nurses</option>
+                                        <option value="Physicians"> Physicians</option>
+                                        <option value="Pharmacists">Pharmacists</option>
+                                        <option value="Doctor">Doctor</option>
+                                        </select>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        <input type="submit" value="Add Staff Member">
+                                    </td>
+                                </tr>
+
+
+                            </table>
+                        </div>
+                        </form>
+
+                    </div>
+
+
+
+                    <!-- END OF DINITHI'S CODE -->
+                </div>
+            </div>
+        </div>
+        <div class="catTwo" style="display: block;" id="Billingdiv">
+            <div class="tabContent3">
+                <div class="AppointmentleftHolder">
+                    <input type="text" placeholder="Search by patient name" id="searchBarBilling" onkeyup="searchBilling()">
+                    <div class="BillingLeftBigBox" id="BillingLeftBigBox">
+                        <div class="BillingContentBox">
+                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            <p id="Randila">Patient Name : Randila</p>
+                            <p id="69">Patient id : 69 </p>
+                        </div>
+                        <div class="BillingContentBox">
+                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            <p id="Saveen">Patient Name : Saveen</p>
+                            <p id="420">Patient id : 420 </p>
+                        </div>
+                        <div class="BillingContentBox">
+                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            <p id="Dilasha">Patient Name : Dilasha</p>
+                            <p id="300">Patient id : 300 </p>
+                        </div>
+                        <div class="BillingContentBox">
+                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            <p id="Dinithi">Patient Name : Dinithi</p>
+                            <p id="299">Patient id : 299 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="AppointmentRightHolder">
+                    <form action="">
+                        <table border="0" class="AppointmentInputTable">
+                            <tr>
+                                <td>
+                                    <input type="text" name="" id="BillingPatId" placeholder="Patient Id">
+                                </td>
+                                <td>
+                                    <input type="text" id="BillingPatName" placeholder="Patient Name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Select a Date :</p>
+                                </td>
+                                <td>
+                                    <input type="date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Room Cost</p>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Staff Charge :</p>
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Medication Charge :</p>
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Discounts :</p>
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr aria-rowspan="2">
+                                <td colspan="2">
+                                    <input type="submit" name="" id="" value="Generate Bill">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="catTwo" style="display: none;" id="Appointmentsdiv">
+            <div class="tileHolder2">
+                <div class="homeTile TileCenter" onclick="windowManager('addAppointmentWindowPop')">
+                    <p class="TileText">Add Appointments</p>
+                </div>
+            </div>
+            <div class="appointmentListdiv">
+                <table border="0" class="appointmentsTable">
+
+                    <tr>
+                        <th>
+                            Appointments List
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Date</th>
+                        <th>Patient</th>
+                        <th>Doctor</th>
+                    </tr>
+                </table>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Randila Senath </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Chathushi Gunapala </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Dilasha Tharindi</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="addStaffWindow" id="addAppointmentWindowPop" style="height:80%; ">
+                <div class="addStaffInner" id="insideAddStaff" style="display: none;">
+                    <i class="fa fa-close closebtn" id="addStaffClosebtn" onclick="windowCloser('addAppointmentWindowPop')"></i>
+                    <div class="tabContent3">
+                        <div class="AppointmentleftHolder">
+                            <input type="text" placeholder="Search by patient name" id="searchBar" onkeyup="searchFunction()">
+                            <div class="AppointmentleftBigBox" id="AppointmentleftBigBox">
+                                <div class="AppointmentContentBox">
+                                    <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                                    <p id="Randila">Patient Name : Randila</p>
+                                    <p id="69">Patient id : 69 </p>
+                                </div>
+                                <div class="AppointmentContentBox">
+                                    <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                                    <p id="Saveen">Patient Name : Saveen</p>
+                                    <p id="420">Patient id : 420 </p>
+                                </div>
+                                <div class="AppointmentContentBox">
+                                    <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                                    <p id="Dilasha">Patient Name : Dilasha</p>
+                                    <p id="300">Patient id : 300 </p>
+                                </div>
+                                <div class="AppointmentContentBox">
+                                    <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                                    <p id="Dinithi">Patient Name : Dinithi</p>
+                                    <p id="299">Patient id : 299 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="AppointmentRightHolder">
+                            <form action="">
+                                <table border="0" class="AppointmentInputTable">
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="" id="patId" placeholder="Patient Id">
+                                        </td>
+                                        <td>
+                                            <input type="text" id="patName" placeholder="Patient Name">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Select a Date :</p>
+                                        </td>
+                                        <td>
+                                            <input type="date">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Select a Time :</p>
+                                        </td>
+                                        <td>
+                                            <input type="time">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Select a Doctor :</p>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" disabled selected>
+                                                    Pick a Doctor
+                                                </option>
+                                                <option value="">Randila</option>
+                                                <option value="">Saveen</option>
+                                                <option value="">Dinithi</option>
+                                                <option value="">Dilasha</option>
+                                                <option value="">Chathushi</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr aria-rowspan="2">
+                                        <td colspan="2">
+                                            <input type="submit" name="" id="" value="Add Appointment">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catTwo" style="display: none;" id="Inventorydiv">
+            <div class="tileHolder2">
+                <!---DINITHI -->
+                <div class="homeTile TileCenter" onclick="windowManager('addInventoryWindowPop')">
+                    <p class="TileText">Order Inventory</p>
+                </div>
+                <!--DINITHI WINDOW-->
+                <div class="addStaffWindow" id="addInventoryWindowPop" style="height:80%; ">
+                    <div class="addStaffInner" id="insideInventory" style="display: none;">
+                        <i class="fa fa-close closebtn" id="addStaffClosebtn" onclick="windowCloser('addInventoryWindowPop')"></i>
+
+
+                        <input type="text" placeholder="Search by Inventory name" id="searchInventoryBar" onkeyup="myFunction()">
+                        <!--<div class="AppointmentleftBigBox" id="AppointmentleftBigBox">
+                                    <div class="AppointmentContentBox">-->
+
+
+
+                        <table id="myTable">
+                            <tr class="header">
+                                <th style="width:20%;">Product Name</th>
+                                <th style="width:20%;">MedID</th>
+                                <th style="width:20%;">Manufacture</th>
+
+                                <th style="width:20%;">Catergory</th>
+
+                                <th style="width:40%;">Availability</th>
+
+                                <th style="width:40%;">Expiry Date</th>
+                            </tr>
+
+
+
+
+                        </table>
+
+
+                        <!---PHP END-->
+
+
+                    </div>
+                </div>
+                <!--DINITHI END WINDOW-->
+                <!--END DINITHI-->
+            </div>
+        </div>
+        <div class="catTwo" style="display: none;" id="Monthly Reportsdiv">
+            <p>Monthly Rep</p>
+        </div>
+
+
+    </div>
+    <div class="rightDiv ">
+        <div class="userImg">
+            <img src="src/userimage.png" alt="" class="loggedinuserImg">
+        </div>
+        <p>
+            Dr.Saveen Malinga
+        </p>
+        <p>
+            DoctorID:69
+        </p>
+        <button id="logout">   
+            Logout         
+        </button>
+
+    </div>
+
+
+</body>
+
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("slideSelect");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            // console.log("current before is :", current[0]);
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            console.log(this.id);
+            divFunc(this.id);
+            // var test = document.getElementById(this.id).textContent;
+            // console.log("Current after is : ", current[0]);
+            // console.log(test);
+            // console.log(this.className);
+            // console.log("id is :", this.id);
+        });
+    }
+</script>
+
+<script>
+    // function divFunc(divId) {
+    //     var div = divId.concat("div");
+    //     var main = document.getElementById("contentDiv");
+    //     var innerArr = main.getElementsByTagName("div");
+    //     // console.log("forwareded value :", div);
+    //     for (var i = 0; i < innerArr.length; i++) {
+    //         console.log("array value :", innerArr[i]);
+
+    //         if (innerArr[i].id == div) {
+    //             // console.log("Matching pair is :", innerArr[i]);
+    //             // console.log("And :", div);
+    //             document.getElementById(innerArr[i].id).style.display = "block";
+    //             // var x = document.getElementById(div);
+    //             // x.style.display = "block";
+    //         } else {
+    //             document.getElementById(innerArr[i].id).style.display = "none";
+    //         }
+
+    //     }
+
+
+    // }
+</script>
+
+<script>
+    function divFunc(divId) {
+        var divArray = ["Homediv", "Manage Patientdiv", "Manage Staffdiv", "Billingdiv", "Appointmentsdiv", "Inventorydiv", "Monthly Reportsdiv"];
+        var div = divId.concat("div");
+        document.getElementById(div).style.display = "block";
+        for (var i = 0; i < divArray.length; i++) {
+            if (divArray[i] != div) {
+                document.getElementById(divArray[i]).style.display = "none";
+            }
+
+        }
+    }
+</script>
+
+
+<script>
+    // function divFunc(divId) {
+    //     const divArray = ["Homediv", "Manage Patientdiv", "Manage Staffdiv", "Billingdiv", "Appointmentsdiv", "Inventorydiv", "Monthly Reportsdiv"];
+    //     var div = divId.concat("div");
+
+    //     console.log("div is : ", div);
+
+    //     for (var i = 0; i < divArray.length; i++) {
+    //         if (divArray[i] == div) {
+    //             document.getElementById(divArray[i]).style.display = "block";
+    //             console.log("success :", div);
+    //         } else {
+    //             document.getElementById(div).style.display = "none";
+    //             console.log("fail");
+    //         }
+
+    //     }
+
+    // }
+</script>
+
+<!-- <script>
+    var closebtn = document.getElementById("closeBtn");
+    closebtn.addEventListener("click", function() {
+        document.getElementById("sideNavbar").style.width = "0";
+    });
+</script> -->
+
+<script>
+    // var closeStaff = document.getElementById("addStaffClosebtn");
+    // closeStaff.addEventListener("click", function() {
+    //     document.getElementById("addStaffWindowPop").style.width = "0%";
+    //     closeStaff.style.display = "none";
+    //     document.getElementById("insideAddStaff").style.display = "none";
+    //     document.getElementById("addStaffForm").style.display = "none";
+
+
+    // });
+
+    // var openStaff = document.getElementById("addStaffOpenbtn");
+    // openStaff.addEventListener("click", function() {
+    //     document.getElementById("addStaffWindowPop").style.width = "75%";
+    //     closeStaff.style.display = "block";
+    //     document.getElementById("insideAddStaff").style.display = "block";
+    //     document.getElementById("addStaffForm").style.display = "block";
+
+    // });
+
+    // var closePatient = document.getElementById("addPatientClosebtn");
+    // var openPatient = document.getElementById("addPatientOpenbtn");
+    // openPatient.addEventListener("click", function() {
+    //     document.getElementById("addPatientWindowPop").style.width = "75%";
+    //     closePatient.style.display = "block";
+    //     document.getElementById("insideAddPatient").style.display = "block";
+    //     document.getElementById("addPatientForm").style.display = "block";
+
+    // });
+    // closePatient.addEventListener("click", function() {
+    //     document.getElementById("addPatientWindowPop").style.width = "0%";
+    //     closePatient.style.display = "none";
+    //     document.getElementById("insideAddPatient").style.display = "none";
+    //     document.getElementById("addPatientForm").style.display = "none";
+
+    // });
+    function windowManager(windowId) {
+        var windows, i, j, everyInner;
+
+        var current = document.getElementById(windowId);
+        current.style.width = "80%";
+        var inner = current.getElementsByClassName("addStaffInner");
+        inner[0].style.display = "block";
+
+        windows = document.getElementsByClassName("addStaffWindow");
+        for (i = 0; i < windows.length; i++) {
+            if (windows[i].id != windowId) {
+                document.getElementById(windows[i].id).style.width = "0%";
+                everyInner = windows[i].getElementsByClassName("addStaffInner");
+                everyInner[0].style.display = "none";
+
+            }
+        }
+    }
+
+
+    function windowCloser(windowId) {
+        var current = document.getElementById(windowId);
+        var inner = current.getElementsByClassName("addStaffInner");
+        inner[0].style.display = "none";
+        current.style.width = "0%"
+    }
+</script>
+<script>
+    function openInfo(evt, info) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabContent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(info).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+<!-- <script>
+    var prof = document.getElementById("profileDetails");
+    prof.addEventListener("click", function() {
+        document.getElementById("OtherDetails").style.display = "none";
+        document.getElementById("profileDetails").style.display = "block";
+    });
+
+    var oth = document.getElementById("OtherDetails");
+    oth.addEventListener("click", function() {
+        document.getElementById("profileDetails").style.display = "none";
+        document.getElementById("OtherDetails").style.display = "block";
+    });
+</script> -->
+
+<script>
+    var main = document.getElementById("AppointmentleftBigBox");
+    var inside = main.getElementsByClassName("AppointmentContentBox");
+    for (var i = 0; i < inside.length; i++) {
+        inside[i].addEventListener("click", function() {
+            var currentActive = document.getElementsByClassName("activated");
+            for (var x = 0; x < currentActive.length; x++) {
+                console.log("Current val ", x, currentActive[x]);
+            }
+
+            if (currentActive.length > 0) {
+                currentActive[0].className = currentActive[0].className.replace(" activated", "");
+            }
+
+            this.className += " activated";
+            var mostinner = this.getElementsByTagName("p");
+            for (var j = 0; j < mostinner.length; j++) {
+                document.getElementById("patName").value = mostinner[0].id;
+                document.getElementById("patId").value = mostinner[1].id;
+
+            }
+        });
+    }
+
+    function searchFunction() {
+        // Declare variables 
+        var input, filter, outsideBox, insideDiv, p, i, txtValue;
+        input = document.getElementById("searchBar");
+        filter = input.value.toUpperCase(); //get serached value and turn to upper case
+
+        outsideBox = document.getElementById("AppointmentleftBigBox");
+        insideDiv = outsideBox.getElementsByClassName("AppointmentContentBox"); //since tr is tage takes getelemnet by tag
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < insideDiv.length; i++) {
+            p = insideDiv[i].getElementsByTagName("p")[0];
+            if (p) {
+                txtValue = p.textContent || p.innerText; //innerText is function of html
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    insideDiv[i].style.display = "";
+                } else {
+                    insideDiv[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+<script>
+    var main = document.getElementById("BillingLeftBigBox");
+    var inside = main.getElementsByClassName("BillingContentBox");
+    for (var i = 0; i < inside.length; i++) {
+        inside[i].addEventListener("click", function() {
+            var currentActive = document.getElementsByClassName("activated");
+            for (var x = 0; x < currentActive.length; x++) {
+                console.log("Current val ", x, currentActive[x]);
+            }
+
+            if (currentActive.length > 0) {
+                currentActive[0].className = currentActive[0].className.replace(" activated", "");
+            }
+
+            this.className += " activated";
+            var mostinner = this.getElementsByTagName("p");
+            for (var j = 0; j < mostinner.length; j++) {
+                document.getElementById("BillingPatName").value = mostinner[0].id;
+                document.getElementById("BillingPatId").value = mostinner[1].id;
+
+            }
+        });
+    }
+
+    function searchBilling() {
+        // Declare variables 
+        var input, filter, outsideBox, insideDiv, p, i, txtValue;
+        input = document.getElementById("searchBarBilling");
+        filter = input.value.toUpperCase(); //get serached value and turn to upper case
+
+        outsideBox = document.getElementById("BillingLeftBigBox");
+        insideDiv = outsideBox.getElementsByClassName("BillingContentBox"); //since tr is tage takes getelemnet by tag
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < insideDiv.length; i++) {
+            p = insideDiv[i].getElementsByTagName("p")[0];
+            if (p) {
+                txtValue = p.textContent || p.innerText; //innerText is function of html
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    insideDiv[i].style.display = "";
+                } else {
+                    insideDiv[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+</html>

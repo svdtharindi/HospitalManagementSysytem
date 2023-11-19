@@ -1,0 +1,94 @@
+<form id="form1" name="form1" method="post" >
+      <table class="table1"width="846" height="70" border="0" align="right" bgcolor="#000" >
+        <tbody>
+          <tr><img src="logo.png"></tr>
+          <tr>
+           
+            <td width="200" align="center" >
+              
+          
+          <td width="10" align="right"><a href="Dash Page.php" ><img align="right" src="" alt=""></a><img width="62"  height="62" src="profileimage.png"></td>
+          </td>
+        
+           
+           
+          
+            
+          </tr>
+         
+        </tbody>
+      </table>
+       
+       
+      
+
+      <form class="form1"id="form1" name="form1" method="post" width="700" >
+        <div class="testing" style="position:fixed; right: 229px;left: 650px; top: 100px; width: 383px; height: 423px; font-size: 30px " > 
+<h1>Registration</h1>
+<table width="560" height="463" border="0" >
+          <tbody>
+            <tr  style="text-align: center">
+              <td  style="text-align: center" width="50"><p class="p1">Full Name</p></td>
+              <tr  style="text-align: center"></tr><!--Next Row-->
+              <td> <input type="text" name="txtFullName"  autocomplete="on" required >
+                First Name</td>
+
+              <td> <input type="text" name="txtFullName"  autocomplete="on" required >Middle Name</td>
+              <td> <input type="text" name="txtFullName"  autocomplete="on" required >Lat Name</td>
+              </tr>
+              
+            <tr>
+              <td style="text-align: center"><p>Birth Date</p></td>
+              <td> <input type="date" name="b_day" autocomplete="on" required ></td>
+            </tr>
+            <tr>
+              <td  style="text-align: center"><p>Gender</p></td>
+              <td>
+                <select name="gender" id="gender" >
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                 
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td  style="text-align: center"><p>NIC</p></td>
+              <td>  <input id="nic" type="text" name="nic" autocomplete="on" required ></td>
+            </tr>
+            <tr>
+              <td  style="text-align: center"><p>Phone number</p></td>
+              <td> <input id="phone" type="text" name="phone" autocomplete="on" required ></td>
+            </tr>
+            <tr>
+              <td  style="text-align: center"><p>Email</p></td>
+              <td>  <input  id="email" type="email" name="email" autocomplete="on" required ></td>
+              
+            </tr>
+            <tr  style="text-align: center">
+              <td  style="text-align: center" width="50"><p class="p1">Current Address</p></td>
+              <tr  style="text-align: center"></tr><!--Next Row-->
+              <td> <input type="text" name="txtFullName"  autocomplete="on" required >
+               Street Address</td>
+              <tr></tr>
+              <td> <input type="text" name="txtFullName"  autocomplete="on" required >City</td>
+              <td> <input type="text" name="txtFullName"  autocomplete="on" required >State/Province</td>
+              </tr>
+            
+            <tr><td></td></tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+
+        </table>
+        <table width="150" height="100" border="0" align="right" >
+          <tbody>
+            <tr  style="text-align: center">
+
+<a href="test3.php" class="next">Next >> </a>
+
+              </tr>
+          </tbody>
+        </table>
+      </form>
